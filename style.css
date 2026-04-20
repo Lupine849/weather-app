@@ -1,1 +1,18 @@
 @charset 'utf-8';
+
+/* 全体のリセット調整 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
