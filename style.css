@@ -59,3 +59,9 @@ button {
 button:hover {
   background: #00c6ff;
 }
+
+/* 状態表示 */
+.status {
+  margin-top: 15px;
+}
+
