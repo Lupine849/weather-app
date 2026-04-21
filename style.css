@@ -65,3 +65,25 @@ button:hover {
   margin-top: 15px;
 }
 
+/* 結果表示 */
+.result {
+  margin-top: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 10px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
