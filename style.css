@@ -35,8 +35,17 @@ h1 {
 /* フォーム */
 form {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
   margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
 }
 
 input {
