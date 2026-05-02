@@ -5,4 +5,8 @@ const cityInput = document.querySelector('#city-input');
 
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();
+
+  const city = cityInput.value;
+
+  
 });
