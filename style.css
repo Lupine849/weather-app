@@ -70,12 +70,12 @@ button:hover {
 }
 
 /* 状態表示 */
-.status {
+#status {
   margin-top: 15px;
 }
 
 /* 結果表示 */
-.result {
+#result {
   margin-top: 15px;
 }
 

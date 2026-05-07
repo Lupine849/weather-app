@@ -2,7 +2,7 @@
 
 const weatherForm = document.querySelector('#weather-form');
 const cityInput = document.querySelector('#city-input');
-const statusText = document.querySelector('.status p');
+const statusText = document.querySelector('#status p');
 
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault();
