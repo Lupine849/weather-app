@@ -14,5 +14,9 @@ weatherForm.addEventListener('submit', (e) => {
     return;
   }
 
-  statusText.textContent = `${city}の天気を取得中...`;
+  try {
+    statusText.textContent = `${city}の天気を取得中...`;
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=ja`;
+  }
 });
