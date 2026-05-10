@@ -4,7 +4,7 @@ const weatherForm = document.querySelector('#weather-form');
 const cityInput = document.querySelector('#city-input');
 const statusText = document.querySelector('#status p');
 
-weatherForm.addEventListener('submit', (e) => {
+weatherForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const city = cityInput.value.trim();
@@ -18,5 +18,9 @@ weatherForm.addEventListener('submit', (e) => {
     statusText.textContent = `${city}の天気を取得中...`;
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric&lang=ja`;
+
+    const response = await fetch(url);
+
+    const data = await response.json();
   }
 });
