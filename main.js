@@ -21,6 +21,12 @@ weatherForm.addEventListener('submit', async (e) => {
 
     const response = await fetch(url);
 
+  if (!response.ok) {
+    throw new Error('都市が見つかりません');
+  }
+
     const data = await response.json();
+  } catch (error) {
+    statusText.textContent = error.message;
   }
 });
