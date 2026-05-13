@@ -79,6 +79,10 @@ button:hover {
   margin-top: 15px;
 }
 
+.hidden {
+  display: none;
+}
+
 h2 {
   margin-bottom: 10px;
 }

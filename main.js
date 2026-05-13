@@ -37,6 +37,8 @@ weatherForm.addEventListener('submit', async (e) => {
     weather.textContent = data.weather[0].description;
     humidity.textContent = `${data.main.humidity} %`;
 
+    result.classList.remove('hidden');
+
     statusText.textContent = '取得成功';
   } catch (error) {
     statusText.textContent = error.message;
