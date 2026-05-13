@@ -3,6 +3,11 @@
 const weatherForm = document.querySelector('#weather-form');
 const cityInput = document.querySelector('#city-input');
 const statusText = document.querySelector('#status p');
+const result = document.querySelector('#result');
+const cityName = document.querySelector('.city-name');
+const temp = document.querySelector('.temp');
+const weather = document.querySelector('.weather');
+const humidity = document.querySelector('.humidity');
 
 weatherForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -26,6 +31,13 @@ weatherForm.addEventListener('submit', async (e) => {
   }
 
     const data = await response.json();
+
+    cityName.textContent = data.name;
+    temp.textContent = `${data.main.temp} ℃`;
+    weather.textContent = data.weather[0].description;
+    humidity.textContent = `${data.main.humidity} %`;
+
+    statusText.textContent = '取得成功';
   } catch (error) {
     statusText.textContent = error.message;
   }
