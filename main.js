@@ -42,6 +42,8 @@ weatherForm.addEventListener('submit', async (e) => {
     result.classList.remove('hidden');
 
     statusText.textContent = '取得成功';
+
+    cityInput.value = '';
   } catch (error) {
     statusText.textContent = error.message;
   }
