@@ -19,6 +19,8 @@ weatherForm.addEventListener('submit', async (e) => {
     return;
   }
 
+  result.classList.add('hidden');
+
   try {
     statusText.textContent = `${city}の天気を取得中...`;
 
