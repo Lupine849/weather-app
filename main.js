@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', async (e) => {
     const data = await response.json();
 
     cityName.textContent = data.name;
-    temp.textContent = `${data.main.temp} ℃`;
+    temp.textContent = `${Math.round(data.main.temp)} ℃`;
     weather.textContent = data.weather[0].description;
     humidity.textContent = `${data.main.humidity} %`;
 
